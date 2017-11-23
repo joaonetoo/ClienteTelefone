@@ -130,11 +130,11 @@ public class TelefoneDAOImpl implements IFTelefoneDAO {
     }
 
     @Override
-    public int deleteTelefone(Telefone t) throws SQLException {
+    public int deleteTelefone(int pk) throws SQLException {
         this.conexao.conectar();
         String sql = "DELETE FROM Telefone WHERE telefoneid = ?";
         PreparedStatement comando = this.conexao.getConexao().prepareStatement(sql);
-        comando.setInt(1, t.getId());
+        comando.setInt(1, pk);
         int result = comando.executeUpdate();
         this.conexao.close();
         return result;

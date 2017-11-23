@@ -14,6 +14,6 @@ public interface IFTelefoneDAO {
     public int updateTelefone(Telefone t, int pk) throws SQLException;
     public List<Telefone> getTelefones() throws SQLException; //read
     public Telefone findTelefoneByPK(int pk) throws SQLException;
-    public int deleteTelefone(Telefone t) throws SQLException;
+    public int deleteTelefone(int pk) throws SQLException;
     public List<Telefone> findTelefoneByClientePK(int clientepk) throws SQLException;
 }

@@ -109,11 +109,11 @@ public class ClienteDAOImpl implements IFClienteDAO {
     }
 
     @Override
-    public void deleteCliente(Cliente c) throws SQLException{
+    public void deleteCliente(int pk) throws SQLException{
         this.conexao.conectar();
         String sql = "DELETE FROM Cliente WHERE clienteid = ?";
         PreparedStatement comando = this.conexao.getConexao().prepareStatement(sql);
-        comando.setInt(1, c.getId());
+        comando.setInt(1, pk);
         comando.executeUpdate();
         this.conexao.close();
     }

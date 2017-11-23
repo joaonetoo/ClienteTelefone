@@ -84,7 +84,7 @@ public class jUnitClienteTeste {
     @Test
     public void deletarCliente() {
         try {
-            ClienteDAOImpl.getInstance().deleteCliente(cliente);
+            ClienteDAOImpl.getInstance().deleteCliente(1);
         } catch (SQLException ex) {
             Logger.getLogger(jUnitClienteTeste.class.getName()).log(Level.SEVERE, null, ex);
         }

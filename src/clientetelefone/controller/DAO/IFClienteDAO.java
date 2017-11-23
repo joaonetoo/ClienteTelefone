@@ -15,7 +15,7 @@ public interface IFClienteDAO {
     public void updateCliente(Cliente c, int pk) throws SQLException;
     public List<Cliente> getClientes() throws SQLException; //read
     public Cliente findClienteByPK(int pk) throws SQLException;
-    public void deleteCliente(Cliente c) throws SQLException;
+    public void deleteCliente(int pk) throws SQLException;
     public List<Telefone> listarTodosTelefonesCliente(int pk) throws SQLException;
     
 }

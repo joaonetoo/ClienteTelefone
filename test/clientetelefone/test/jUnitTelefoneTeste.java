@@ -83,7 +83,7 @@ public class jUnitTelefoneTeste {
     @Test
     public void deleteTelefone() {
         try {
-            TelefoneDAOImpl.getInstance().deleteTelefone(telefone);
+            TelefoneDAOImpl.getInstance().deleteTelefone(1);
         } catch (SQLException ex) {
             Logger.getLogger(jUnitTelefoneTeste.class.getName()).log(Level.SEVERE, null, ex);
         }
