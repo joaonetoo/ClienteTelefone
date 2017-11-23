@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ClienteTelefone.jnlp">
+  <information>
+    <title>ClienteTelefone</title>
+    <vendor>ldal1</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ClienteTelefone.jar" size="11207" download="eager" />
+  </resources>
+  <application-desc main-class="clientetelefone.view.Teste"  name="ClienteTelefone" >
+  </application-desc>
+  <update check="always"/>
+</jnlp>
